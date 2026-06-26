@@ -12,7 +12,7 @@ import {
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
 import { ROUTES } from "@/constants/routes";
-import { LayoutDashboard, Users } from "lucide-react";
+import { Landmark, LayoutDashboard, Users } from "lucide-react";
 import { useRouter } from "next/navigation";
 
 export function AppSidebar() {
@@ -21,6 +21,7 @@ export function AppSidebar() {
   const navItems = [
     { label: "Dashboard", Icon: LayoutDashboard, href: ROUTES.DASHBOARD },
     { label: "Dashboard", Icon: Users, href: ROUTES.DASHBOARD_CONGREGATION },
+    { label: "Pelkat", Icon: Landmark, href: ROUTES.DASHBOARD_PELKAT },
   ];
 
   return (

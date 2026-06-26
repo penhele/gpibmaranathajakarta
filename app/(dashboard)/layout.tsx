@@ -10,11 +10,11 @@ export default function DashboardLayout({
     <SidebarProvider>
       <AppSidebar />
 
-      <main className="w-full px">
+      <div className="flex-1">
         <SidebarTrigger />
 
         <div className="p-4">{children}</div>
-      </main>
+      </div>
     </SidebarProvider>
   );
 }

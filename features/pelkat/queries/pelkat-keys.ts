@@ -1,3 +1,4 @@
 export const pelkatKeys = {
-  all: ["pelkats"] as const,
+  all: ["pelkat"] as const,
+  deatil: (id: string | number) => ["pelkat", id] as const,
 };
